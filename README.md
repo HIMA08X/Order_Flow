@@ -414,7 +414,7 @@ used in the project.
 
 ## Author
 
-**Ibrahim**
+**[Ibrahim](https://github.com/HIMA08X)**
 
 Computer Science Student \| Backend .NET Developer
 
