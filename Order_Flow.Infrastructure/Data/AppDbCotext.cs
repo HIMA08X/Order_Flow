@@ -25,7 +25,7 @@ namespace Order_Flow.Infrastructure.Data
            { 
                entity.HasKey(e => e.Id);
                entity.Property(e => e.Name).IsRequired().HasMaxLength(200);
-               entity.HasData(new { Id = 1, Name = "Ibrahim" }, new { Id = 2, Name = "Ahmed" });
+               entity.HasData(new { Id = 1, Name = "Ibrahim" }, new { Id = 2, Name = "Ahmed" },new {Id = 3, Name = "Atef"},new {Id = 4, Name = "Osama"});
                
            });
             modelBuilder.Entity<Order>(entity =>
@@ -47,6 +47,7 @@ namespace Order_Flow.Infrastructure.Data
                 entity.HasKey(e => e.OrderId);
                 entity.Property(e => e.CustomerName).IsRequired().HasMaxLength(200);
                 entity.Property(e => e.Total).IsRequired().HasPrecision(18,2);
+                entity.Property(e => e.LastUpdateAt).IsRequired();
             });
 
         }
